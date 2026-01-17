@@ -16,6 +16,17 @@
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
 </style>
+	<style id="local-zoom-fix" type="text/css">
+	/* Constrain page width and scale large elements so no zooming needed */
+	html, body { font-size: 15px; }
+	body { max-width: 1200px; margin: 0 auto; overflow-x: hidden; }
+	#page, .container, .header-container { max-width: 1200px; margin-left: auto; margin-right: auto; }
+	img { max-width: 100%; height: auto; display: block; }
+	.sr7-module, .sr7-content, .sr7-slidebg, .tp-shape, .rev_slider, .rev_slider_wrapper { max-width: 100% !important; box-sizing: border-box; }
+	header.masthead, .header-one { width: 100%; box-sizing: border-box; }
+	/* Slightly larger base font on very large displays */
+	@media (min-width:1600px){ html, body { font-size: 16px; } }
+	</style>
 <style id="wp-emoji-styles-inline-css" type="text/css">
 
 	img.wp-smiley, img.emoji {
@@ -677,219 +688,337 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					</div>
 		</section>
 		
-		<!-- TESTIMONIALS SECTION -->
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-testimonials elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="testimonials-section" data-element_type="section" data-settings="{" background_background":"classic"}"="">
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-testimonials-heading" data-id="testimonials-heading" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-testimonials-title elementor-widget elementor-widget-financier-heading" data-id="testimonials-title" data-element_type="widget" data-widget_type="financier-heading.default">
-				<div class="elementor-widget-container">
-					<div class="stronghold-heading"><div class="heading-subtitle"><span class="heading-subtitle-span heading-subtitle">What Our Clients Say</span></div><div class="heading-title"><h3 class="heading-title-element">Client Testimonials & Success Stories</h3><span class="heading-separator"></span></div></div>
-				</div>
-				</div>
-					</div>
-		</div>
-				</div>
-		</section>
-		
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-testimonial-cards elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="testimonial-cards" data-element_type="section">
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-testimonial-1" data-id="testimonial-1" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated" style="background: white; padding: 30px; border-radius: 10px; border-left: 5px solid #1c8fed; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(86, 196, 119, 0.2)'" onmouseout="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
-						<div style="margin-bottom: 15px; color: #1c8fed;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-						<p style="font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.6;">"VAM Kenya transformed our business strategy. Their team's expertise and dedication resulted in a 45% increase in our operational efficiency. Highly recommended!"</p>
-						<div style="display: flex; align-items: center; gap: 15px;">
-							<div style="width: 50px; height: 50px; background: #1c8fed; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 16px;">JK</div>
-							<div>
-								<h5 style="margin: 0; font-weight: 600; color: #073b6b;">John Kipchoge</h5>
-								<p style="margin: 0; font-size: 12px; color: #999;">CEO, Tech Solutions Ltd</p>
-							</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-testimonial-2" data-id="testimonial-2" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated" style="background: white; padding: 30px; border-radius: 10px; border-left: 5px solid #1c8fed; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(86, 196, 119, 0.2)'" onmouseout="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
-						<div style="margin-bottom: 15px; color: #1c8fed;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-						<p style="font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.6;">"Their wealth management solutions have provided us with peace of mind. Professional, transparent, and results-driven. An absolute game-changer!"</p>
-						<div style="display: flex; align-items: center; gap: 15px;">
-							<div style="width: 50px; height: 50px; background: #1c8fed; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 16px;">AM</div>
-							<div>
-								<h5 style="margin: 0; font-weight: 600; color: #073b6b;">Amara Mwangi</h5>
-								<p style="margin: 0; font-size: 12px; color: #999;">Managing Director, Investments Co.</p>
-							</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-testimonial-3" data-id="testimonial-3" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated" style="background: white; padding: 30px; border-radius: 10px; border-left: 5px solid #1c8fed; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(86, 196, 119, 0.2)'" onmouseout="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
-						<div style="margin-bottom: 15px; color: #1c8fed;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-						<p style="font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.6;">"Exceptional service from start to finish! VAM Kenya's corporate advisory solutions helped us navigate complex transactions seamlessly. Truly impressive!"</p>
-						<div style="display: flex; align-items: center; gap: 15px;">
-							<div style="width: 50px; height: 50px; background: #1c8fed; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 16px;">DC</div>
-							<div>
-								<h5 style="margin: 0; font-weight: 600; color: #073b6b;">David Kariuki</h5>
-								<p style="margin: 0; font-size: 12px; color: #999;">Founder, Real Estate Ventures</p>
-							</div>
-						</div>
-					</div>
-		</div>
-					</div>
-		</section>
-		
-		<!-- TEAM SECTION -->
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-team-section elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="team-section" data-element_type="section">
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-team-heading" data-id="team-heading" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-team-title elementor-widget elementor-widget-financier-heading" data-id="team-title" data-element_type="widget" data-widget_type="financier-heading.default">
-				<div class="elementor-widget-container">
-					<div class="stronghold-heading"><div class="heading-subtitle"><span class="heading-subtitle-span heading-subtitle">Meet the Experts</span></div><div class="heading-title"><h3 class="heading-title-element">Our Leadership Team</h3><span class="heading-separator"></span></div></div>
-				</div>
-				</div>
-					</div>
-		</div>
-				</div>
-		</section>
-		
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-team-members elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="team-members" data-element_type="section">
-				<div class="elementor-container elementor-column-gap-default" style="gap: 30px;">
-					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-team-member-1" data-id="team-member-1" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated" style="padding: 0;">
-						<div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(86, 196, 119, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
-							<div style="background: linear-gradient(135deg, #1c8fed 0%, #1c8fed 100%); height: 140px; display: flex; align-items: center; justify-content: center; position: relative;">
-								<div style="width: 120px; height: 120px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1c8fed; font-size: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(86, 196, 119, 0.2);">PM</div>
-								<div style="position: absolute; top: 10px; right: 10px; width: 12px; height: 12px; background: #1c8fed; border-radius: 50%; border: 3px solid white;"></div>
-							</div>
-							<div style="padding: 25px 20px; text-align: center;">
-								<h5 style="margin: 0 0 8px 0; color: #073b6b; font-weight: 700; font-size: 16px;">Peter Mwangi</h5>
-								<p style="margin: 0 0 12px 0; color: #1c8fed; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Chief Executive Officer</p>
-								<p style="margin: 0; color: #777; font-size: 13px; line-height: 1.5;">20+ years of experience in financial advisory and corporate strategy</p>
-								<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #f0f0f0; display: flex; justify-content: center; gap: 12px;">
-									<a href="#" style="color: #1c8fed; font-size: 14px; transition: 0.3s;"><i class="fab fa-linkedin"></i></a>
-									<a href="#" style="color: #1c8fed; font-size: 14px; transition: 0.3s;"><i class="fab fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-team-member-2" data-id="team-member-2" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated" style="padding: 0;">
-						<div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(86, 196, 119, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
-							<div style="background: linear-gradient(135deg, #1c8fed 0%, #1c8fed 100%); height: 140px; display: flex; align-items: center; justify-content: center; position: relative;">
-								<div style="width: 120px; height: 120px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1c8fed; font-size: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(86, 196, 119, 0.2);">SK</div>
-								<div style="position: absolute; top: 10px; right: 10px; width: 12px; height: 12px; background: #1c8fed; border-radius: 50%; border: 3px solid white;"></div>
-							</div>
-							<div style="padding: 25px 20px; text-align: center;">
-								<h5 style="margin: 0 0 8px 0; color: #073b6b; font-weight: 700; font-size: 16px;">Sarah Kiplagat</h5>
-								<p style="margin: 0 0 12px 0; color: #1c8fed; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">CFO & Wealth Manager</p>
-								<p style="margin: 0; color: #777; font-size: 13px; line-height: 1.5;">Expert in portfolio management and investment strategies</p>
-								<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #f0f0f0; display: flex; justify-content: center; gap: 12px;">
-									<a href="#" style="color: #1c8fed; font-size: 14px; transition: 0.3s;"><i class="fab fa-linkedin"></i></a>
-									<a href="#" style="color: #1c8fed; font-size: 14px; transition: 0.3s;"><i class="fab fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-team-member-3" data-id="team-member-3" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated" style="padding: 0;">
-						<div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(86, 196, 119, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
-							<div style="background: linear-gradient(135deg, #1c8fed 0%, #1c8fed 100%); height: 140px; display: flex; align-items: center; justify-content: center; position: relative;">
-								<div style="width: 120px; height: 120px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1c8fed; font-size: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(86, 196, 119, 0.2);">NK</div>
-								<div style="position: absolute; top: 10px; right: 10px; width: 12px; height: 12px; background: #1c8fed; border-radius: 50%; border: 3px solid white;"></div>
-							</div>
-							<div style="padding: 25px 20px; text-align: center;">
-								<h5 style="margin: 0 0 8px 0; color: #073b6b; font-weight: 700; font-size: 16px;">Nairobi Omondi</h5>
-								<p style="margin: 0 0 12px 0; color: #1c8fed; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Head of Corporate Advisory</p>
-								<p style="margin: 0; color: #777; font-size: 13px; line-height: 1.5;">Specializing in M&A and business restructuring</p>
-								<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #f0f0f0; display: flex; justify-content: center; gap: 12px;">
-									<a href="#" style="color: #1c8fed; font-size: 14px; transition: 0.3s;"><i class="fab fa-linkedin"></i></a>
-									<a href="#" style="color: #1c8fed; font-size: 14px; transition: 0.3s;"><i class="fab fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-team-member-4" data-id="team-member-4" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated" style="padding: 0;">
-						<div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(86, 196, 119, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
-							<div style="background: linear-gradient(135deg, #1c8fed 0%, #1c8fed 100%); height: 140px; display: flex; align-items: center; justify-content: center; position: relative;">
-								<div style="width: 120px; height: 120px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1c8fed; font-size: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(86, 196, 119, 0.2);">JN</div>
-								<div style="position: absolute; top: 10px; right: 10px; width: 12px; height: 12px; background: #1c8fed; border-radius: 50%; border: 3px solid white;"></div>
-							</div>
-							<div style="padding: 25px 20px; text-align: center;">
-								<h5 style="margin: 0 0 8px 0; color: #073b6b; font-weight: 700; font-size: 16px;">Joyce Njoroge</h5>
-								<p style="margin: 0 0 12px 0; color: #1c8fed; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Client Relations Manager</p>
-								<p style="margin: 0; color: #777; font-size: 13px; line-height: 1.5;">Ensuring exceptional service delivery and client satisfaction</p>
-								<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #f0f0f0; display: flex; justify-content: center; gap: 12px;">
-									<a href="#" style="color: #1c8fed; font-size: 14px; transition: 0.3s;"><i class="fab fa-linkedin"></i></a>
-									<a href="#" style="color: #1c8fed; font-size: 14px; transition: 0.3s;"><i class="fab fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-		</div>
-					</div>
-		</section>
-		
-		 
-		
-		<!-- FAQ SECTION -->
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-faq-section elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="faq-section" data-element_type="section" data-settings="{" background_background":"classic"}"="">
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-faq-heading" data-id="faq-heading" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-faq-title elementor-widget elementor-widget-financier-heading" data-id="faq-title" data-element_type="widget" data-widget_type="financier-heading.default">
-				<div class="elementor-widget-container">
-					<div class="stronghold-heading"><div class="heading-subtitle"><span class="heading-subtitle-span heading-subtitle">Have Questions?</span></div><div class="heading-title"><h3 class="heading-title-element">Frequently Asked Questions</h3><span class="heading-separator"></span></div></div>
-				</div>
-				</div>
-					</div>
-		</div>
-				</div>
-		</section>
-		
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-faq-content elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="faq-content" data-element_type="section">
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-faq-col-1" data-id="faq-col-1" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div style="margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
-							<div style="padding: 18px; background: #f5f5f5; cursor: pointer; font-weight: 600; color: #073b6b; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(this)">
-								<span>What services does VAM Kenya offer?</span>
-								<i class="fas fa-chevron-down" style="transition: 0.3s;"></i>
-							</div>
-							<div style="padding: 18px; background: white; color: #666; display: none; font-size: 14px;">VAM Kenya offers comprehensive services including Corporate Advisory Solutions, Financial Advisors Solutions, Wealth Management Solutions, Real Estate Solutions, Financial Consultant Solutions, and Project Financing Solutions.</div>
-						</div>
-						<div style="margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
-							<div style="padding: 18px; background: #f5f5f5; cursor: pointer; font-weight: 600; color: #073b6b; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(this)">
-								<span>How long does the engagement typically last?</span>
-								<i class="fas fa-chevron-down" style="transition: 0.3s;"></i>
-							</div>
-							<div style="padding: 18px; background: white; color: #666; display: none; font-size: 14px;">The duration depends on the scope and complexity of your project. Most engagements range from 3-12 months, with ongoing support available for long-term partnerships.</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-faq-col-2" data-id="faq-col-2" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div style="margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
-							<div style="padding: 18px; background: #f5f5f5; cursor: pointer; font-weight: 600; color: #073b6b; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(this)">
-								<span>What is your team's experience level?</span>
-								<i class="fas fa-chevron-down" style="transition: 0.3s;"></i>
-							</div>
-							<div style="padding: 18px; background: white; color: #666; display: none; font-size: 14px;">Our team consists of highly trained professionals with 20+ years of combined experience across multiple industries and business sectors.</div>
-						</div>
-						<div style="margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
-							<div style="padding: 18px; background: #f5f5f5; cursor: pointer; font-weight: 600; color: #073b6b; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(this)">
-								<span>How do you ensure confidentiality?</span>
-								<i class="fas fa-chevron-down" style="transition: 0.3s;"></i>
-							</div>
-							<div style="padding: 18px; background: white; color: #666; display: none; font-size: 14px;">We maintain strict confidentiality agreements and comply with all industry standards and regulations. Your data security is our top priority.</div>
-						</div>
-					</div>
-		</div>
-					</div>
-		</section>
-		
+	<section class="section-wrapper">
+
+<style>
+/* ===== GLOBAL ===== */
+.section-wrapper {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f7f9fc;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title span {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1c8fed;
+  font-weight: 600;
+}
+
+.section-title h3 {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #073b6b;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #1c8fed;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(28,143,237,0.18);
+}
+
+.stars {
+  color: #1c8fed;
+  margin-bottom: 16px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 14px;
+}
+
+.client-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1c8fed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.client h5 {
+  margin: 0;
+  font-size: 15px;
+  color: #073b6b;
+}
+
+.client span {
+  font-size: 12px;
+  color: #888;
+}
+
+/* ===== TEAM ===== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-top {
+  background: linear-gradient(135deg, #1c8fed, #56c477);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.team-avatar {
+  width: 110px;
+  height: 110px;
+  background: white;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1c8fed;
+}
+
+.team-body {
+  padding: 26px;
+  text-align: center;
+}
+
+.team-body h5 {
+  margin-bottom: 6px;
+  color: #073b6b;
+}
+
+.team-body span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1c8fed;
+  text-transform: uppercase;
+}
+
+.team-body p {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* ===== FAQ ===== */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 18px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #f1f5fb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #073b6b;
+}
+
+.faq-answer {
+  padding: 18px 22px;
+  display: none;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .testimonials-grid,
+  .team-grid,
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-grid,
+  .team-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="container">
+
+  <!-- TESTIMONIALS -->
+  <div class="section-title">
+    <span>What Our Clients Say</span>
+    <h3>Client Testimonials & Success Stories</h3>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>“VAM Kenya transformed our strategy, increasing operational efficiency by 45%.”</p>
+      <div class="client">
+        <div class="client-avatar">JK</div>
+        <div>
+          <h5>John Kipchoge</h5>
+          <span>CEO, Tech Solutions</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>“Professional, transparent and results-driven. Truly a game-changer.”</p>
+      <div class="client">
+        <div class="client-avatar">AM</div>
+        <div>
+          <h5>Amara Mwangi</h5>
+          <span>Managing Director</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>“Exceptional corporate advisory that helped us navigate complex transactions.”</p>
+      <div class="client">
+        <div class="client-avatar">DK</div>
+        <div>
+          <h5>David Kariuki</h5>
+          <span>Founder, Real Estate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM -->
+  <div class="section-title" style="margin-top:80px;">
+    <span>Meet the Experts</span>
+    <h3>Our Leadership Team</h3>
+  </div>
+
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-top"><div class="team-avatar">PM</div></div>
+      <div class="team-body">
+        <h5>Peter Mwangi</h5>
+        <span>Chief Executive Officer</span>
+        <p>20+ years in financial advisory & strategy</p>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-top"><div class="team-avatar">SK</div></div>
+      <div class="team-body">
+        <h5>Sarah Kiplagat</h5>
+        <span>Chief Financial Officer</span>
+        <p>Portfolio & investment expert</p>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-top"><div class="team-avatar">NO</div></div>
+      <div class="team-body">
+        <h5>Nairobi Omondi</h5>
+        <span>Corporate Advisory</span>
+        <p>M&A & restructuring specialist</p>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-top"><div class="team-avatar">JN</div></div>
+      <div class="team-body">
+        <h5>Joyce Njoroge</h5>
+        <span>Client Relations</span>
+        <p>Client experience & service delivery</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-title" style="margin-top:80px;">
+    <span>Have Questions?</span>
+    <h3>Frequently Asked Questions</h3>
+  </div>
+
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+        What services do you offer? <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Corporate advisory, wealth management, project financing & real estate solutions.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+        How experienced is your team? <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Our leadership brings over 20 years of combined industry experience.
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
 		<!-- TRUST INDICATORS SECTION -->
 		<section class="elementor-section elementor-top-section elementor-element elementor-element-trust-section elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="trust-section" data-element_type="section">
 				<div class="elementor-container elementor-column-gap-default">
